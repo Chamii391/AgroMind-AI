@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { motion } from "framer-motion";
-console.log(motion);
+console.log(motion);``
 import { 
   FaSeedling, 
   FaChartLine, 
@@ -10,6 +10,8 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Header from "../componenets/header";
+import AgriChatBot from "../componenets/AgriChatBot";
+
 
 export default function Home() {
 
@@ -448,6 +450,9 @@ export default function Home() {
         </section>
 
       </main>
+
+      {/* ===== CHATBOT - Add at the end ===== */}
+      <AgriChatBot />
     </>
   );
 }

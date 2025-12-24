@@ -83,7 +83,7 @@ export default function Header() {
           {/* ===== CTA Button ===== */}
           <div className="hidden md:flex items-center gap-4">
             <Link
-              to="/get-started"
+              to="/predict-page"
               className="group relative px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm font-semibold rounded-2xl shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-105 transition-all duration-300 overflow-hidden"
             >
               {/* Shine effect */}

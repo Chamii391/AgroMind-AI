@@ -12,6 +12,7 @@ import {
   FaLightbulb,
   FaHeart
 } from "react-icons/fa";
+import AgriChatBot from "../componenets/AgriChatBot";
 
 export default function About() {
 
@@ -512,6 +513,7 @@ export default function About() {
             ))}
           </div>
         </div>
+        <AgriChatBot />
       </section>
 
     </main>

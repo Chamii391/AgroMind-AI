@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from services.crop_service import predict_crop_choice
 from services.yield_services import predict_yield
 from services.disease_services import predict_disease
+from services.chat import ask_agri_bot
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -47,6 +48,18 @@ def disease_predict():
         return jsonify(result), 400
 
     return jsonify(result)
+
+
+@app.route("/chat", methods=["POST"])
+def chat():
+    data = request.get_json(silent=True) or {}
+    user_message = (data.get("message") or "").strip()
+
+    if not user_message:
+        return jsonify({"error": "message is required"}), 400
+
+    reply = ask_agri_bot(user_message)
+    return jsonify({"reply": reply})
 
 
 

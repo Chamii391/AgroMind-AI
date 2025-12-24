@@ -30,14 +30,14 @@ export default function PredictPage() {
     { id: 6, left: 92, delay: 4, duration: 17, size: 16 },
   ], []);
 
-  // Features Data
+  // Features Data - FIXED INFORMATION
   const features = useMemo(() => [
     {
       id: "crop",
       icon: <FaSeedling className="w-8 h-8" />,
       title: "Crop Prediction",
-      shortDesc: "Find the best crops for your land",
-      description: "Our AI analyzes soil conditions, weather patterns, and historical data to recommend the most suitable crops for your farm. Get personalized suggestions based on your location and resources.",
+      shortDesc: "Check if a crop is suitable to grow",
+      description: "Our AI analyzes your soil type, climate conditions, and environmental factors to determine whether a specific crop is suitable or not suitable for cultivation in your area. Get clear recommendations on crop compatibility with your land.",
       color: "from-emerald-500 to-green-600",
       lightColor: "bg-emerald-50",
       borderColor: "border-emerald-200",
@@ -45,18 +45,18 @@ export default function PredictPage() {
       image: "https://images.pexels.com/photos/2132171/pexels-photo-2132171.jpeg?auto=compress&cs=tinysrgb&w=600",
       path: "/predict-page/crop-predict",
       benefits: [
-        "Soil-based recommendations",
-        "Weather pattern analysis",
-        "Seasonal crop suggestions",
-        "Profit optimization tips"
+        "Suitable or Not Suitable result",
+        "Soil compatibility check",
+        "Climate suitability analysis",
+        "Growing conditions assessment"
       ]
     },
     {
       id: "yield",
       icon: <FaChartLine className="w-8 h-8" />,
       title: "Yield Prediction",
-      shortDesc: "Estimate your harvest accurately",
-      description: "Predict your crop yield with high accuracy using machine learning. Our model considers rainfall, temperature, soil quality, and farming practices to give you reliable harvest estimates.",
+      shortDesc: "Estimate harvest in tons per hectare",
+      description: "Predict your expected crop yield measured in tons per hectare using machine learning. Our model analyzes rainfall, temperature, soil quality, and farming practices to provide accurate harvest quantity estimates for better planning.",
       color: "from-amber-500 to-orange-600",
       lightColor: "bg-amber-50",
       borderColor: "border-amber-200",
@@ -64,18 +64,18 @@ export default function PredictPage() {
       image: "https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg?auto=compress&cs=tinysrgb&w=600",
       path: "/predict-page/yield-predict",
       benefits: [
-        "Accurate harvest forecasts",
-        "Resource planning help",
-        "Market timing insights",
-        "Historical comparison"
+        "Yield in tons per hectare",
+        "Production quantity forecast",
+        "Harvest planning assistance",
+        "Area-based calculations"
       ]
     },
     {
       id: "disease",
       icon: <FaShieldAlt className="w-8 h-8" />,
       title: "Disease Detection",
-      shortDesc: "Detect plant diseases early",
-      description: "Upload a photo of your plant leaf and our deep learning model will instantly detect any diseases. Get treatment recommendations and preventive measures to protect your crops.",
+      shortDesc: "Check if plant leaves are healthy or diseased",
+      description: "Upload a photo of your plant leaf and our AI will instantly analyze whether the leaf is healthy (good) or diseased (bad). Get quick diagnosis results to identify plant health issues and take timely action to protect your crops.",
       color: "from-teal-500 to-cyan-600",
       lightColor: "bg-teal-50",
       borderColor: "border-teal-200",
@@ -83,10 +83,10 @@ export default function PredictPage() {
       image: "https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&w=600",
       path: "/predict-page/disease-predict",
       benefits: [
-        "Instant disease detection",
-        "Treatment recommendations",
-        "Preventive measures",
-        "Plant health monitoring"
+        "Healthy or Diseased result",
+        "Leaf condition analysis",
+        "Quick image-based diagnosis",
+        "Plant health status check"
       ]
     }
   ], []);
